@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>設計</title>
+
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="link.css">
+  <link rel="stylesheet" href="haikei.css">
+  <link rel="stylesheet" href="yajurisi.css">
+  <script src="https://unpkg.com/scrollreveal"></script>
+  <script src="fade.js"></script>
+  <style>
+
+   .title {/*親div*/
+    position: relative;/*相対配置*/
+    height: 90%;
+   }
+
+   .title h1 {
+    position: absolute;/*絶対配置*/
+    color: white;/*文字は白に*/
+    font-weight: bold; /*太字に*/
+    font-size: 3em;/*サイズ2倍*/
+    font-family :Quicksand, sans-serif;/*Google Font*/
+    top: 0;
+    left: 5%;
+   }
+
+   .title img {
+    width: 100%;
+    height:100%;
+   }
+
+   .sekkei{
+    
+    font-size:40px
+   }
+   ul > li{
+    font-size: 28px;
+   }
+   p, h1, h2, h3 {
+      margin-bottom: 1px; /* Adjust the value to set the desired gap size */
+    }
+
+  </style>
+</head>
+
+<body>
+    <a class="button" href="index.html">Top</a>
+<h2 id="midasi">設計</h2>
+<div id="main">
+    <h2>SERVER1   役割:</h2>
+
+    <p>
+        <ul>
+        <li>サーバー1はトラフィックを分散させるための主導者として機能します.</li>
+        <li>Load balancerを使用して処理が必要な大量のトラフィックを分配します</li>
+        <li>システム監視: zabbixを使用してネットワーク攻撃時のコンピューターの状態を監視します。</li>
+        </ul>
+    </p>
+    <h2>SERVER2 と SERRVER3  役割:</h2>
+
+    <ul>
+        <li>サーバー1から分散された余分なトラフィックを処理します。</li>
+    </ul>
+   </div>
+<a href="sekkei2.html" class="arrow-right"></a>
+<a href="mokuteki.html" class="arrow-left"></a>
+</body>
+</html>
